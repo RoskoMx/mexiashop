@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Mexía Shop</title>
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="/imagenes/logo1.png" class="imagenLogo" alt="Logo de la Baerbería"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> Bienvenido </a></li>
+                        <li><a href="productos.html"> Productos </a></li>
+                        <li><a href="contacto.html"> Contacto </a></li>
+                    </ul>    
+                </nav>
+            </div>
+        </header>
+
+        <main class="difu">
+            <div class="centrado">
+                <form>
+                    <label for="nombreapellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreapellido" class="input-padron" required>
+    
+                    <label for="correoelectronico">Correo Electrónico</label>
+                    <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+    
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" class="input-padron" required placeholder="(+XX) XXXX XXXX">
+    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+    
+                    <fieldset>
+                        <legend>¿Cómo le gustaría que lo contactemos?</legend>
+    
+                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                                            
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                        
+                    </fieldset>
+    
+    
+                    <fieldset>
+                        <legend>¿En cuál horario prefiere ser atentido?</legend>
+                        <select>
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
+                        </select>
+                    </fieldset>
+    
+                    
+    
+    
+                    <label class="checkbox"> <input type="checkbox" checked> ¿Le gustaría recibir novedades de la tienda? </label>
+                    
+                    <input type="submit" value="Enviar Formulario" class="enviar">
+                    
+                </form>
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                    </tbody>          
+                </table>
+            </div>
+
+            <div>
+                <p>
+                    
+                </p>
+            </div>
+                        
+        </main>   
+    </body>
+    <footer>
+        <img src="/imagenes/rosko_xolo.png" class="futer">
+        <p class="copyright">&copy Copyright Rosko Solutions - 2024 </p>
+    </footer>
+
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '65e48305b5855f7e143480e5' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+</html>
