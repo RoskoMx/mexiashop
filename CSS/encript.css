@@ -64,9 +64,9 @@ html {
   
   main {
     height: 90vh;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    padding: 3rem 0;
+    padding: 3rem 15px;
     grid-template-rows: 2fr 1fr;
     gap: 3rem;
   }
@@ -196,27 +196,4 @@ html {
       width: 75%;
       display: unset;
     }
-  }
-  /* Footer */
-  footer {
-    font-size: 1.75rem;
-    height: 10vh;
-    text-align: center;
-  }
-  
-  .icons {
-    font-size: 2.5rem;
-    gap: 1.5rem;
-    padding-top: 1rem;
-    justify-content: center;
-  }
-  
-  .icons i {
-    text-shadow: 2px 2px 4px #fff;
-    color: #000;
-    transition: all 0.5s;
-  }
-  
-  .icons i:hover {
-    color: blue;
   }
