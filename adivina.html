@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width">
+    <title>Número Secreto</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/adivina.css">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="/imagenes/logo1.png" class="imagenLogo" alt="Logo de la Agencia"></h1>
+            <nav>
+                <ul>
+                    <li><a href="productos.html"> RETURN </a></li>
+                    
+                </ul>    
+            </nav>
+        </div>       
+    </header>  
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h2></h2>
+                    <p class="texto__parrafo"></p>
+                </div>
+                <input type="number" id="valorUsuario" min="1" max="100" class="container__input">
+                <div class="chute container__botones">
+                    <button onclick="verificarIntento()" class="container__boton">Intentar</button>
+                    <button onclick="reiniciarJuego()" class="container__boton" id="reiniciar" disable>Nuevo juego</button> 
+                </div>
+            </div>
+            <img src="/imagenes/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+        </div>
+    </div>
+    <script src="/JS/adivina.js"></script>  
+</body>
+<footer>
+    <img src="/imagenes/rosko_xolo.png" class="futer">
+    <p class="copyright">&copy Copyright Rosko Solutions - 2024 </p>
+</footer>
+</html>

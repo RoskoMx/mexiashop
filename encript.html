@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/CSS/encript.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="/imagenes/logo1.png" class="imagenLogo" alt="Logo de la Agencia"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="productos.html"> RETURN </a></li>
+                        
+                    </ul>    
+                </nav>
+            </div>
+            
+        </header>  
+        
+        <main class="grid">
+
+            <div class="flex user padding-user">
+                <div>
+                    <img class="logo" src="/imagenes/alura.png" alt="Alura">
+                    <textarea class="user-text" name="" id="" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div>
+                    <label for=""><span class="exclamation">&#33;</span> Solo letras minúsculas y sin acentos</label>
+                    <div class="flex flex-button">
+                        <button type="button" onclick="encrypt()" class="button-blue">Cifrar</button>
+                        <button type="button" onclick="decrypt()" class="button-grey">Descifrar</button>
+                    </div>
+                </div>
+            </div> <!-- User Input and Buttons -->
+
+            <div class="flex translation not-found padding-result">
+                <img src="/imagenes/not-found-cat.png" alt="Not Found">
+                <p class="bold empty">Ningún mensaje fue encontrado</p>
+                <p class="empty-legend">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div> <!-- Traslation Not Found -->
+            <div class="flex translation text-found display-none padding-result">
+                <textarea class="inputCopy" name="" id="" placeholder="Resultado" disabled></textarea>
+                <button type="button" onclick="copy()" class="button-grey">Copiar</button>
+            </div> <!-- Result traslation -->
+
+        </main>
+        <script src="/JS/encript.js"></script>
+    </body>
+    <footer>
+        <img src="/imagenes/rosko_xolo.png" class="futer">
+        <p class="copyright">&copy Copyright Rosko Solutions - 2024 </p>
+    </footer>
+</html>
