@@ -95,7 +95,7 @@ html {
   
   textarea::placeholder {
     font-weight: bolder;
-    color: antiquewhite;
+    color: rgb(248, 170, 68);
   }
   
   *:disabled {
@@ -135,6 +135,12 @@ html {
     border: 1px solid antiquewhite;
   }
   
+  .button-blue, .button-grey li:active{
+    border-color: #d10be7fe;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
   /* MediaQueries */
   @media (min-width: 1080px) {
     main {
