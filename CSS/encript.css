@@ -135,7 +135,7 @@ html {
     border: 1px solid antiquewhite;
   }
   
-  .button-blue:active, .button-grey:active{
+  button:active{
     border-color: #d10be7fe;
     font-size: 30px;
     font-weight: bold;
